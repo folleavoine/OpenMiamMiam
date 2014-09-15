@@ -734,6 +734,16 @@ services:
                 event: open_miam_miam.admin.producer.dashboard.collect_tiles
                 method: addAttendancesToConfirm
 
+    open_miam_miam.listener.admin.dashboard.impersonate:
+        class: Isics\Bundle\OpenMiamMiamBundle\Listener\ImpersonateListener
+        arguments:
+            - @templating
+        tags:
+            -
+                name: kernel.event_listener
+                event: kernel.exception
+                method: onKernelException
+
     # Handlers
     open_miam_miam.handler.producer_sales_order_history:
         class: %open_miam_miam.handler.producer_sales_order_history.class%

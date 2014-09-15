@@ -196,6 +196,7 @@ admin.super.menu.manager:       "Gestionnaires"
 
 # Admin / Super / Dashboard
 admin.super.dashboard.title:                    "Tableau de bord"
+admin.super.dashboard.already_impersonate:      "Vous avez déjà usurpé une identité."
 admin.super.dashboard.button.switch_user:       "Usurpation d'identité"
 admin.super.dashboard.button.create_article:    "Écrire un article"
 admin.super.dashboard.button.create_newsletter: "Envoyer une lettre d'info."
